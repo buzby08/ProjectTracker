@@ -1,0 +1,14 @@
+@model ErrorViewModel
+
+@{
+    ViewData["Title"] = "Page not found";
+}
+
+<div class="text-center text-danger">
+    <h1>404 - Page not found</h1>
+    <p>
+        The requested page was not found. Please check the url and try again, or click the button below to go home. <br/>
+        Request id: @Model.RequestId
+    </p>
+    <a class="btn btn-primary" asp-controller="Home" asp-action="Index">Go home</a>
+</div>
